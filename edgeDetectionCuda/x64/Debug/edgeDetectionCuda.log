@@ -1,0 +1,40 @@
+﻿  
+  D:\marquetteOneDrive\OneDrive - Marquette University\Codes\C++ Projects\edgeDetectionCuda\edgeDetectionCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -IC:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile   -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od  /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\marquetteOneDrive\OneDrive - Marquette University\Codes\C++ Projects\edgeDetectionCuda\edgeDetectionCuda\kernel.cu" -clean 
+  kernel.cu
+  Compiling CUDA source file kernel.cu...
+  
+  D:\marquetteOneDrive\OneDrive - Marquette University\Codes\C++ Projects\edgeDetectionCuda\edgeDetectionCuda>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -IC:\opencv\build\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.0\include"  -G   --keep-dir x64\Debug -maxrregcount=0  --machine 64 --compile -cudart static  -g   -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc141.pdb /FS /Zi /RTC1 /MDd " -o x64\Debug\kernel.cu.obj "D:\marquetteOneDrive\OneDrive - Marquette University\Codes\C++ Projects\edgeDetectionCuda\edgeDetectionCuda\kernel.cu" 
+C:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+C:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+C:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(100): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+C:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(127): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(76): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(82): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(88): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(95): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(101): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(272): warning : non-POD class type passed through ellipsis
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(272): warning : non-POD class type passed through ellipsis
+c:\opencv\build\include\opencv2\flann\lsh_table.h(220): warning : statement is unreachable
+c:\opencv\build\include\opencv2\flann\lsh_table.h(225): warning : statement is unreachable
+c:\opencv\build\include\opencv2\flann\lsh_table.h(234): warning : statement is unreachable
+C:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+C:\opencv\build\include\opencv2/stitching/detail/warpers.hpp(213): warning : overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+C:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(100): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+C:\opencv\build\include\opencv2/stitching/detail/blenders.hpp(127): warning : overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(76): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(82): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(88): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(95): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(101): warning : transfer of control bypasses initialization of:
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(272): warning : non-POD class type passed through ellipsis
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(272): warning : non-POD class type passed through ellipsis
+  kernel.cu
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(134): warning C4533: initialization of 'blockDim' is skipped by 'goto Error'
+  D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(106): note: see declaration of 'blockDim'
+  D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(134): note: see declaration of 'Error'
+D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(134): warning C4533: initialization of 'gridDim' is skipped by 'goto Error'
+  D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(105): note: see declaration of 'gridDim'
+  D:/marquetteOneDrive/OneDrive - Marquette University/Codes/C++ Projects/edgeDetectionCuda/edgeDetectionCuda/kernel.cu(134): note: see declaration of 'Error'
+     Creating library D:\marquetteOneDrive\OneDrive - Marquette University\Codes\C++ Projects\edgeDetectionCuda\x64\Debug\edgeDetectionCuda.lib and object D:\marquetteOneDrive\OneDrive - Marquette University\Codes\C++ Projects\edgeDetectionCuda\x64\Debug\edgeDetectionCuda.exp
+  edgeDetectionCuda.vcxproj -> D:\marquetteOneDrive\OneDrive - Marquette University\Codes\C++ Projects\edgeDetectionCuda\x64\Debug\edgeDetectionCuda.exe
