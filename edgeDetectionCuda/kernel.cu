@@ -6,6 +6,7 @@
 #include<opencv2/opencv.hpp>
 #include<iostream>
 #include <stdarg.h>
+#include "gaussHeader.h"
 using namespace std;
 using namespace cv;
 
@@ -251,16 +252,26 @@ void ShowManyImages(string title, int nArgs, ...) {
 	va_end(args);
 }
 
-int main()
+/*int main()
 {
+	cudaEvent_t start, stop;
+	cudaEventCreate(&start);
+	cudaEventCreate(&stop);
 	Mat img = imread("Two_lane_city_streets.jpg", 0);
 	int rows = img.rows;
 	int cols = img.cols;
 	cout << "Type- " << img.type() << "original: rows = " << rows << endl << "cols = " << cols << endl;
 	cout << "some rows and cols" << img(Range(0, 1), Range(101, 200));
 
-	int kernel_size = 5;
+	int kernel_size = 21;
+	cudaEventRecord(start);
 	Mat blurred_img = gauss_gpu(img, kernel_size);
+	cudaEventRecord(stop);
+	cudaEventSynchronize(stop);
+	float milliseconds = 0;
+	cudaEventElapsedTime(&milliseconds, start, stop);
+	cout << "time taken for " << kernel_size << "sized kernel- " << milliseconds / 1000 << endl;
+
 	Mat normalized_img;
 	blurred_img.convertTo(normalized_img, CV_8UC1);
 	rows = blurred_img.rows;
@@ -292,10 +303,10 @@ int main()
     if (cudaStatus != cudaSuccess) {
         fprintf(stderr, "cudaDeviceReset failed!");
         return 1;
-    }*/
+    }
 
     return 0;
-}
+}*/
 
 // Helper function for using CUDA to add vectors in parallel.
 cudaError_t addWithCuda(int *c, const int *a, const int *b, unsigned int size)
